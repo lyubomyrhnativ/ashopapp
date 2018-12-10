@@ -1,0 +1,32 @@
+  <article class="menu-logo">
+          <i class="fab fa-angular fa-4x"></i>
+          <span>shop</span>
+  </article>
+  <nav class='menu-items'>
+          <ul>
+              <li *ngFor="let item of menu">
+                      <a href="#">{{item}}</a>
+              </li>
+              <!-- <li><a href="#">Elements</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About As</a></li>
+              <li><a href="#">Contact</a></li> -->
+          </ul>
+  </nav>
+  <section class="menu-search-cart">
+      <article class="menu-search">
+              <i class="fas fa-search fa-lg"></i>
+              <div>
+                  <input type="text" placeholder='Search here you product...'>
+                  <button>
+                          <i class="fas fa-search fa-lg"></i>
+                  </button>
+              </div>
+      </article>
+      <article class="menu-cart">
+              <div>02</div>
+              <i class="fas fa-cart-plus fa-2x"></i>
+      </article>
+  </section>

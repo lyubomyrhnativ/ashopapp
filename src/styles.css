@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    min-height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    /* align-items: stretch; */
+    /* background-color: lightgreen;  */
+}
+app-root{
+    /* background-color:orange; */
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    font-family:Verdana;
+    font-size:14px;
+}
+.hover{
+   border:4px lightgray solid;
+   border-radius:10px;
+    /* transform:scale(1.05); */
+    /* box-shadow: 5px 5px 5px gray; */
+    /* transition: all 1s; */
+    /* cursor:pointer; */
+    z-index:10;
+}

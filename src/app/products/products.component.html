@@ -1,0 +1,22 @@
+<h3>PRODUCT LIST</h3>
+<section class="menu">
+  <h4>There are many variations of passages of brands available</h4>
+  <nav>
+    <ul>
+      <li *ngFor='let item of productsMenu'
+      (click)="clickMenu(item)"
+      [ngClass]='{active:item==activeMenu}'>
+        <a href="#">{{item}}</a>
+      </li>
+    </ul>
+  </nav> 
+</section>
+<section class="product-list">
+  <app-product *ngFor='let item of products' 
+               [product]='item'
+               (eventProduct)='loadProducts()'
+               >
+  </app-product>
+</section>
+  
+

@@ -1,0 +1,48 @@
+app-header{
+    background-color: black;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+}
+app-menu{
+    display:flex;
+    background-color: lightgray;
+    padding: 10px 20px;
+}
+app-mobile-menu{
+    background-color: black;
+    color:white;
+    padding:15px 12%;
+    display:none;
+}
+app-products{
+    /* background-color: yellow; */
+    flex:1;
+    
+}
+app-footer{
+    background-color:black;
+    color:white;
+    padding: 10px;
+    margin-top:auto;
+}
+@media(max-width:950px){
+    app-mobile-menu{
+        display:block;
+    }
+}
+@media(max-width:640px){
+    app-header{
+        justify-content:center;
+    }
+    app-menu{
+        flex-direction: column;
+    }
+}
+@media(max-width:360px){
+    app-menu{
+        padding: 10px 2px;
+    }
+}
+
+
