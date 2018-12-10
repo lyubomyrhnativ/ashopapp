@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 //var User=require('./models/user');
 
 app.get('/',function(req,res){
-	res.sendFile(__dirname+'/dist/myapp/index.html');
+	res.sendFile(__dirname+'/dist/ashop-angular-app/index.html');
 })
 app.get('/getproducts',(req,res)=>{
     console.log('dataproducts:');
